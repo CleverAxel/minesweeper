@@ -1,0 +1,53 @@
+.boxContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: rgb(122, 155, 56);
+    border: 3px solid rgb(97, 119, 54);
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.active{
+    transform: scale(1);
+}
+
+.displayData > p{
+    font-size: 18px;
+    padding: 10px 5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+button {
+    outline: none;
+    border-style: none;
+    box-shadow: 0 4px #c1a23c;
+    color: #5e4800;
+    background-color: #ffd95e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all .1s ease;
+    font-weight: 900;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:active {
+    box-shadow: 0 1px #c1a23c;
+    transform: translateY(3px);
+}

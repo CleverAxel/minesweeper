@@ -1,0 +1,92 @@
+.boardContainer{
+    display: flex;
+}
+
+.board{
+    display: block;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+.row{
+    display: flex;
+}
+.column{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+/*******************************/
+.blue{
+    color: rgb(71, 115, 182);
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: rgb(190, 0, 0);
+}
+
+.purple{
+    color: purple;
+}
+
+.black{
+    color: black;
+}
+
+.correctFlag{
+    color: rgb(11, 97, 37);
+    box-shadow: inset 0px 0px 4px 5px #1ca110;
+}
+
+.wrongFlag{
+    color: rgb(90, 8, 8);
+    box-shadow: inset 0px 0px 4px 5px #211964;
+}
+/*******************************/
+
+.lightGreen{
+    background-color: rgb(170, 215, 81);
+}
+
+.darkGreen{
+    background-color: rgb(162, 209, 73);
+}
+
+.revealed{
+    background-color: sandybrown;
+}
+.darkRevealed{
+    background-color: rgb(231, 158, 94);
+}
+
+.column:hover{
+    filter: brightness(115%);
+}
+
+.startShaking{
+    animation: 0.2s linear 2 shake;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">*/
